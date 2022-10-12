@@ -63,6 +63,6 @@ php wp-cli.phar --info
 chmod +x wp-cli.phar
 mv wp-cli.phar /usr/local/bin/wp
 IP=$(ip a | grep inet | grep 192 | awk '{print $2}' | awk '{ print substr( $0, 1, length($0)-3 ) }')
-wp core install --allow-root --path=/var/www/html/ --url=$IP --title=Ciber --admin_user=test --admin_password=test --admin_email=YOU@YOURDOMAIN.com
+wp core install --allow-root --path=/var/www/html/ --url=$IP --title=Ciber --admin_user=test --admin_password=Pass987655 --admin_email=YOU@YOURDOMAIN.com
 service apache2 restart
 echo -e "\nLa teva màquina amb la $IP està llesta, feliç hacking!\n"
