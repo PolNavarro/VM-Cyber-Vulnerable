@@ -1,5 +1,4 @@
 FROM debian:11.0
-USER root
 EXPOSE 80
 COPY install.sh .
 RUN bash install.sh
